@@ -332,9 +332,7 @@ footer img{
         grid-template-columns: repeat(1,minmax(auto,350px));
         grid-template-rows: repeat(1,1fr) ;
     }
-    footer{
-        padding: 1rem;
-    }
+
     .footer-grid{
         display: grid;
         grid-template-columns: repeat(1,minmax(auto,450px));
