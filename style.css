@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+body{
+    background-color: hsl(218, 28%, 13%);
+    /* background-color: antiquewhite; */
+    color: white;
+    margin: 0;
+}
+:root{
+    --font-regular: 14px;
+    --padding-large:4rem;
+}
+h1,h2,h3 {
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-large);
+    background-color: hsl(217, 28%, 15%);
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-family: 'Open Sans', sans-serif;
+}
+header ul li{
+    margin-left: 2rem;
+}
+header img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Section One */
+.section-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    min-height: 100vh;
+    background: url(images/bg-curvy-desktop.svg);
+    padding-bottom: 6rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(217, 28%, 15%);
+
+}
+.section-one img{
+    max-width: 60%;
+    height: auto;
+}
+.section-one h1 {
+    font-size:2.4rem;
+}
+.section-one p {
+    font-size: var(--font-regular);
+    max-width: 60%;
+    margin-top: 0;
+}
+.section-one button {
+    color: white;
+    background-color: hsl(198, 60%, 50%);
+    padding: 1rem 4rem 1rem 4rem ;
+    border-radius: 50px;
+    margin-top: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+/* Section Two */
+.section-two {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(auto,400px));
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 10rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.section-three {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,minmax(auto,600px));
+    padding: 5rem;
+    gap: 5rem;
+    align-items: center;
+}
+.section-three h2{
+    font-size: 2rem;
+}
+.section-three p{
+    font-size: var(--font-regular);
+}
+.section-three >div img{
+    width: 100%;
+    height: auto;
+}
+
+.section-three button{
+    color: hsl(176, 68%, 64%);
+    background-color: transparent;
+    border: none;
+    justify-content: baseline;
+    /* text-decoration: underline;  */
+}
+.section-three div div{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+}
+.section-three div div img {
+    width: 25px;
+    height: 25px;
+}
+
+.section-four {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(auto,350px));
+    justify-content: center;
+    gap: 2rem;
+    background: url(images/bg-quotes.png);
+    padding-top: 5rem;
+    background-repeat: no-repeat;
+    background-position: 12% 25% ;
+}
+.profile {
+    height: auto;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: hsl(219, 30%, 18%);
+
+
+}
+.profile >div{
+    display: flex;
+    align-items: center;
+}
+.profile p{
+    font-size: var(--font-regular);
+}
+.profile img{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user-info h4{
+    font-size: .7rem;
+}
+.user-info p{
+    font-size: .6rem;
+}
+.user-info p , h4{
+    margin: 0;
+}
+
+.section-five {
+    position: relative;
+    top: 8rem;
+    margin: auto;
+    margin:2rem;
+}
+.callout {
+    background-color: hsl(217, 28%, 15%);
+    margin: auto;
+    border-radius: .5rem;
+    max-width: 55rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.callout h2{
+    margin: 0;
+}
+.callout form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.callout form input {
+    border-radius: 50px;
+    padding: 1rem;
+    width: 500px;
+}
+.callout button{
+    color: white;
+    background-color: hsl(198, 60%, 50%);
+    padding: 1rem 2rem 1rem 2rem ;
+    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+footer img{
+    position: relative;
+    left: 5%;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(5,minmax(auto,450px));
+    margin: auto;
+    max-width: 90%;
+    margin-top: 2rem;
+}
+.contact{
+    margin: auto;
+}
+.contact div:first-child{
+    margin-bottom: 1rem;
+}
+.icon-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: fit-content;
+    gap: 2rem;
+}
+.icon-text p{
+    margin: 0;
+}
+.footer-grid ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer-grid li {
+    margin-bottom: .25rem;
+}
+.footer-grid li:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+.icon {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: .5rem;
+    margin-right: 1rem;
+}
+.icon:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+@media screen and (max-width:700px) {
+    header{
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .section-two {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        justify-content: center;
+        margin-top: 10rem;
+        text-align: center;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .section-three {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        margin: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+    .section-three div div{
+        justify-content: center;
+    }
+
+    .section-four {
+        padding-top: 1rem;
+        grid-template-columns: repeat(1,minmax(auto,350px));
+        grid-template-rows: repeat(1,1fr) ;
+    }
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(auto,450px));
+        grid-template-rows: repeat(1,minmax(auto,1fr));
+        margin: auto;
+        max-width: 90%;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+    .contact{
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .icons{
+        margin: auto;
+        margin-top: 1rem;
+    }
+}
